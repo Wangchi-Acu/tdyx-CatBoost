@@ -17,7 +17,7 @@ explainer = shap.TreeExplainer(CB_model)
 st.image("jsszyylogo.png", width=500)  # 更改url_to_your_logo.png为你的logo图片链接，调整width为适当的大小
 
 # 使用Markdown来定制标题的字体大小
-st.markdown('<h1 style="font-size:42px;">“通督养心”针刺组方治疗失眠症疗效预测</h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="font-size:38px;">“通督养心”针刺组方治疗失眠症疗效预测</h1>', unsafe_allow_html=True)
 
 best_threshold = 0.40  # 这是你确定的最佳阈值
 
@@ -31,7 +31,7 @@ with col1:
     
 with col2:
     PSQI = st.number_input("PSQI总分（分）:", min_value=0.0, max_value=50.0, value=1.0)
-    PD = st.number_input("PSQI睡眠效率得分（分）:", min_value=0.0, max_value=10.0, value=1.0)
+    PD = st.number_input("PSQI睡眠效率得分（分）:", min_value=0.0, max_value=4.0, value=1.0)
     HPRDS = st.number_input("睡眠期间最高脉率（次/分钟）:", min_value=0.0, max_value=200.0, value=1.0)
     
 
