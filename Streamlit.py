@@ -30,8 +30,8 @@ with col1:
     
     
 with col2:
-    PSQI = st.number_input("记录期间最低脉率（次/分钟）:", min_value=0.0, max_value=50.0, value=1.0)
-    PD = st.number_input("自关灯起的N1期潜伏期（分钟）:", min_value=0.0, max_value=10.0, value=1.0)
+    PSQI = st.number_input("PSQI总分（分）:", min_value=0.0, max_value=50.0, value=1.0)
+    PD = st.number_input("PSQI睡眠效率得分（分）:", min_value=0.0, max_value=10.0, value=1.0)
     HPRDS = st.number_input("睡眠期间最高脉率（次/分钟）:", min_value=0.0, max_value=200.0, value=1.0)
     
 
